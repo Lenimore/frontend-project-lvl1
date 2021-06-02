@@ -1,7 +1,10 @@
+#!/usr/bin/env node
 import readlineSync from 'readline-sync';
 import name from '../src/cli.js';
 
 const isEven = () => {
+	console.log('Welcome to the Brain Games!');
+	console.log(`Hello, ${name}!`);
 	console.log('Answer "yes" if the number is even, otherwise answer "no".');
 
 	const getRandomInt = (max) => {
@@ -35,4 +38,4 @@ const isEven = () => {
 		}
 	}
 };
-export default isEven;
+isEven();
